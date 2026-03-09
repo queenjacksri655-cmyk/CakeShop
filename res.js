@@ -27,11 +27,7 @@
   }
 });
 
-  $(document).ready(function(){
-    $(".buy").click(function(){
-        alert(("Welcome to Cake World"))
-    })
-})
+
 
 $(document).ready(function(){
     $("#cho-cake").hover(function(){
@@ -83,3 +79,176 @@ menuOpenButton.addEventListener("click",function(){
 menuCloseButton.addEventListener("click",function(){
     menuOpenButton.click()
 });
+
+
+
+$(document).ready(function() {
+
+    const cakeName = "Redvelvet Cake";
+    const cakePrice = 450;
+
+    $(".buy-8").click(function() {
+        $("#popupText").text(`You selected: ${cakeName} — Price: $${cakePrice}`);
+        $("#popup").fadeIn();
+    });
+
+    $("#closePopup").click(function() {
+        $("#popup").fadeOut();
+    });
+
+});
+
+$(document).ready(function() {
+
+    const cakeName = "Chocolate Cake";
+    const cakePrice = 250;
+
+    $(".buy-9").click(function() {
+        $("#popupText").text(`You selected: ${cakeName} — Price: $${cakePrice}`);
+        $("#popup").fadeIn();
+    });
+
+    $("#closePopup").click(function() {
+        $("#popup").fadeOut();
+    });
+
+});
+
+$(document).ready(function() {
+
+    const cakeName = "Pineapple Cake";
+    const cakePrice = 600;
+
+    $(".buy-1").click(function() {
+        $("#popupText").text(`You selected: ${cakeName} — Price: $${cakePrice}`);
+        $("#popup").fadeIn();
+    });
+
+    $("#closePopup").click(function() {
+        $("#popup").fadeOut();
+    });
+
+});
+
+$(document).ready(function() {
+
+    const cakeName = "Oreo Cupcake";
+    const cakePrice = 50;
+
+    $(".buy-2").click(function() {
+        $("#popupText").text(`You selected: ${cakeName} Price: $${cakePrice}`);
+        $("#popup").fadeIn();
+    });
+
+    $("#closePopup").click(function() {
+        $("#popup").fadeOut();
+    });
+
+});
+
+$(document).ready(function() {
+
+    const cakeName = "Vaniila Cupcake";
+    const cakePrice = 30;
+
+    $(".buy-3").click(function() {
+        $("#popupText").text(`You selected: ${cakeName} Price: $${cakePrice}`);
+        $("#popup").fadeIn();
+    });
+
+    $("#closePopup").click(function() {
+        $("#popup").fadeOut();
+    });
+
+});
+
+$(document).ready(function() {
+
+    const cakeName = "Strawberry Cupcake";
+    const cakePrice = 80;
+
+    $(".buy-4").click(function() {
+        $("#popupText").text(`You selected: ${cakeName} Price: $${cakePrice}`);
+        $("#popup").fadeIn();
+    });
+
+    $("#closePopup").click(function() {
+        $("#popup").fadeOut();
+    });
+
+});
+
+$(document).ready(function() {
+
+    const cakeName = "    Cookies  🍪 ";
+    const cakePrice = 100;
+
+    $(".buy-5").click(function() {
+        $("#popupText").text(`You selected: ${cakeName}  Price: $${cakePrice}`);
+        $("#popup").fadeIn();
+    });
+
+    $("#closePopup").click(function() {
+        $("#popup").fadeOut();
+    });
+
+});
+
+$(document).ready(function() {
+
+    const cakeName = "    Brownies  🤎 ";
+    const cakePrice = 250;
+
+    $(".buy-6").click(function() {
+        $("#popupText").text(`You selected: ${cakeName}  Price: $${cakePrice}`);
+        $("#popup").fadeIn();
+    });
+
+    $("#closePopup").click(function() {
+        $("#popup").fadeOut();
+    });
+
+});
+
+$(document).ready(function() {
+
+    const cakeName = "    Donuts  🥯 ";
+    const cakePrice = 199;
+
+    $(".buy-7").click(function() {
+        $("#popupText").text(`You selected: ${cakeName}  Price: $${cakePrice}`);
+        $("#popup").fadeIn();
+    });
+
+    $("#closePopup").click(function() {
+        $("#popup").fadeOut();
+    });
+
+});
+
+function valid(){
+const name=document.getElementById("form").value.trim()
+if(name==""){
+    alert("Please enter the data!")
+}
+else{
+ $(document).ready(function(){
+
+    $(".submit-button").click(function(c){
+        c.preventDefault(); 
+        $("#popup-overlay").fadeIn();
+        $("#su-popup").fadeIn();
+    });
+
+    $("#close-popup").click(function(){
+        $("#popup-overlay").fadeOut();
+        $("#su-popup").fadeOut();
+        $("input").val("")
+        $(".forminput").val("")
+    });
+   
+
+});   
+}
+}
+
